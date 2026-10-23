@@ -1,0 +1,200 @@
+/* ===== General ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #1e293b;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #ffffff !important;
+    padding: 15px 5%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid #0d6efd;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0d6efd !important;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #084298 !important;
+}
+
+.navbar .btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.navbar .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Search Form ===== */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 80px auto 25px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e5eaf2;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 50, 100, 0.09);
+}
+
+form input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+form input[type="text"]:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+form input::placeholder {
+    color: #9ca3af;
+}
+
+form button {
+    padding: 13px 22px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #084298;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* ===== Search Results ===== */
+.result,
+.search-result,
+.student-result {
+    width: 90%;
+    max-width: 500px;
+    margin: 12px auto;
+    padding: 18px 22px;
+    background-color: #ffffff;
+    border: 1px solid #e5eaf2;
+    border-left: 4px solid #0d6efd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 50, 100, 0.06);
+    transition: 0.3s ease;
+}
+
+.result:hover,
+.search-result:hover,
+.student-result:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(0, 50, 100, 0.10);
+}
+
+/* ===== Student Name ===== */
+.result h3,
+.search-result h3,
+.student-result h3 {
+    margin: 0 0 10px;
+    color: #0755b8;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.result p,
+.search-result p,
+.student-result p {
+    margin: 5px 0;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== Score ===== */
+.score {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #e8f1ff;
+    color: #0755b8;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 14px 4%;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    form {
+        width: 92%;
+        margin-top: 50px;
+        padding: 16px;
+        gap: 8px;
+    }
+
+    form input[type="text"] {
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    form button {
+        padding: 11px 13px;
+        font-size: 13px;
+    }
+
+    .result,
+    .search-result,
+    .student-result {
+        width: 92%;
+        padding: 15px;
+    }
+
+    .result h3,
+    .search-result h3,
+    .student-result h3 {
+        font-size: 16px;
+    }
+}
